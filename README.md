@@ -39,5 +39,8 @@ The data dictionary can be found here - http://kdd.ics.uci.edu/databases/kddcup9
 
 
 **3. Plan for Prediction**
+- For categorical columns, using one-hot encoding would be good idea to avoid any scaling issues
+- For continous columns, normalizing using standard scaler or normalizer would be a best bet to make the model learn quickly.
+- Performing feature importance analysis using RandomForest features would be good idea and then use iterative feature selection based on the importance values of features would yield best set of features for the final model
 
 
