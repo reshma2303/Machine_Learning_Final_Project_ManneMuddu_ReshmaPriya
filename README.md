@@ -22,6 +22,9 @@ The data dictionary can be found here - http://kdd.ics.uci.edu/databases/kddcup9
 - Recommendation: Among all server rate columns, one server rate column will be sufficient since all of them are 100% correlated. Therefore, dst_host_serror_rate can be selected for final prediction modeling
 - There is some relation (valid) between all categorical columns. Hence, these columns need not be dropped for analysis and prediction
 - There are no as such very highly correlated independent variables (features) to the dependent variable. Therefoe, no subselection is required in this analysis from this perspective.
+
+![alt text](https://github.com/reshma2303/Machine_Learning_Final_Project_ManneMuddu_ReshmaPriya/blob/master/plots/plot-1.png)
+
 - As seen in the above, plot, the services IRC, telnet have higher mean duration times compared to other type of services
 - As seen above, as duration increases the count of connection gets reduced
 - As seen above the flag tupes S0, REJ, SF, RSTR have higher number of unique services being utilized for the malware connections
