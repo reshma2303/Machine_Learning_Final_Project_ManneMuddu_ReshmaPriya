@@ -26,7 +26,15 @@ The data dictionary can be found here - http://kdd.ics.uci.edu/databases/kddcup9
 ![alt text](https://github.com/reshma2303/Machine_Learning_Final_Project_ManneMuddu_ReshmaPriya/blob/master/plots/plot-1.png)
 
 - As seen in the above, plot, the services IRC, telnet have higher mean duration times compared to other type of services
+
+![alt text](https://github.com/reshma2303/Machine_Learning_Final_Project_ManneMuddu_ReshmaPriya/blob/master/plots/plot-2.png)
+
+
 - As seen above, as duration increases the count of connection gets reduced
+
+![alt text](https://github.com/reshma2303/Machine_Learning_Final_Project_ManneMuddu_ReshmaPriya/blob/master/plots/plot-3.png)
+
+
 - As seen above the flag tupes S0, REJ, SF, RSTR have higher number of unique services being utilized for the malware connections
 
 
