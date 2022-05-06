@@ -43,7 +43,7 @@ The data dictionary can be found here - http://kdd.ics.uci.edu/databases/kddcup9
 - For continous columns, normalizing using standard scaler or normalizer would be a best bet to make the model learn quickly.
 - Performing feature importance analysis using RandomForest features would be good idea and then use iterative feature selection based on the importance values of features would yield best set of features for the final model
 
-**Part-2 Summary**
+## Part-2 Summary
 
 ![alt text](https://github.com/reshma2303/Machine_Learning_Final_Project_ManneMuddu_ReshmaPriya/blob/master/plots/plot-4.png)
 
