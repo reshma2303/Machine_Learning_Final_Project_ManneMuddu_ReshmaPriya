@@ -43,4 +43,27 @@ The data dictionary can be found here - http://kdd.ics.uci.edu/databases/kddcup9
 - For continous columns, normalizing using standard scaler or normalizer would be a best bet to make the model learn quickly.
 - Performing feature importance analysis using RandomForest features would be good idea and then use iterative feature selection based on the importance values of features would yield best set of features for the final model
 
+**Part-2 Summary**
 
+![alt text](https://github.com/reshma2303/Machine_Learning_Final_Project_ManneMuddu_ReshmaPriya/blob/master/plots/plot-4.png)
+
+- As seen in the above, plot shows the distribution of the target classes
+- There are NA or missing values in the dataset. Therefore, there is no need to try an imputation techniques
+- The statistics of the continous variables, the column/feature 'num_outbound_cmds' will be of no use for analysis/prediction since all of its values are 0s
+- In this case, all the non-numeric columns have less categories. Therefore, we can use one-hot encoding to all of these non-numeric columns and label encoder is not required
+- From thecategorical columns distribution, the column/feature 'is_host_login' will not be useful for the prediction as all of its values are 0s.
+
+
+![alt text](https://github.com/reshma2303/Machine_Learning_Final_Project_ManneMuddu_ReshmaPriya/blob/master/plots/plot-5.png)
+
+
+- As seen above, the plot shows the linear regression residual plot
+- As seen in the above plot, the plot is distributed between -1 and 1 since the predicted values range from -1 to 1. The R2 value looks good. Also, the histogram distribution is restricted to 0-1
+
+![alt text](https://github.com/reshma2303/Machine_Learning_Final_Project_ManneMuddu_ReshmaPriya/blob/master/plots/plot-6.png)
+
+
+- As seen above there is not much deviation with the change in the train and test percentages. However, it is good to know that the model is well adjusting to the given dataset. Ideally 70-30 split would be a good genralization
+
+**Conclusion**
+DecisionTreeClassifier is performing better than linear regression interms of accuracy. For this type of dataset where there is no relationship between the input features, DecisioTreeClassifier would be a goodfit. Since, DecisionTreeClassifier as overfitting problems, RandomForestClassifier will be a good ensemble technique which brings the genralization
